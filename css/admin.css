@@ -1,0 +1,84 @@
+:root {
+    --theme-clr-light: rgba(0, 255, 255, 0.384);
+    --theme-clr: cyan;
+    --outline-clr: blue;
+
+    --fs-big: clamp(1.1rem, 0.5rem + 1vw, 4rem);
+    --fs-med: clamp(0.7rem, 0.5rem + 1vw, 4rem);
+    --fs-small: clamp(0.7rem, 0.5rem + 1vw, 4rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.container.show {
+    opacity: 1;
+}
+
+body {
+    font-size: var(--fs-med);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    color: rgba(210, 210, 210, 0.725);
+}
+
+.container {
+    background: linear-gradient(-45deg, #30cfd0 0%, #330867 100%, #330867 100%) no-repeat;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+table,
+th,
+td {
+    border: 2px dotted var(--theme-clr-light);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding-inline: 2px;
+    padding-block: 5px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+h1 {
+    margin-inline: 0.5rem;
+    margin-block: 1rem;
+}
+h2 {
+    margin-inline: 0.5rem;
+    margin-block: 1rem;
+}
+
+.wrap {
+    width: 100%;
+    padding-inline: 0.5rem;
+
+}
+
+@media only screen and (max-width: 740px) {
+    table {
+      font-size: 6px;
+    }
+  }

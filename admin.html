@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>College Attendance Report</title>
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>College Attendance Management</h1>
+        <form id="attendance-form"></form>
+
+        <h2>Attendance Report :</h2>
+        <div class="wrap">
+            <table id="attendance-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>Lecture 1</th>
+                    <th>Lecture 2</th>
+                    <th>Lecture 3</th>
+                    <th>Lecture 4</th>
+                    <th>Lecture 5</th>
+                    <th>Lecture 6</th>
+                    <th>Date</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- The Firebase database configuration -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+        <script src="./js/admin.js"></script>
+    </div>
+</body>
+
+</html>

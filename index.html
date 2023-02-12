@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>College Attendance Management</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div class="grid">
+        <div class="left">
+            <img src="./img/3.png" alt="a boy standing holding attendence book in hand">
+        </div>
+
+        <div class="right">
+            <div class="form-container">
+                <h1>College Attendance Management</h1>
+                <form id="attendance-form">
+                    <div class="input-flex-container">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="roll">Roll:</label>
+                            <input type="text" id="roll" name="roll" required>
+                        </div>
+                    </div>
+                    <div class="checkbox-flex-container">
+                        <div>
+                            <label for="lecture1">Lecture 1:</label>
+                            <input type="checkbox" id="lecture1" class="checkboxes" name="lecture1">
+                        </div>
+                        <div>
+                            <label for="lecture2">Lecture 2:</label>
+                            <input type="checkbox" id="lecture2" class="checkboxes" name="lecture2">
+                        </div>
+                        <div>
+                            <label for="lecture3">Lecture 3:</label>
+                            <input type="checkbox" id="lecture3" class="checkboxes" name="lecture3">
+                        </div>
+                        <div>
+                            <label for="lecture4">Lecture 4:</label>
+                            <input type="checkbox" id="lecture4" class="checkboxes" name="lecture4">
+                        </div>
+                        <div>
+                            <label for="lecture5">Lecture 5:</label>
+                            <input type="checkbox" id="lecture5" class="checkboxes" name="lecture5">
+                        </div>
+                        <div>
+                            <label for="lecture6">Lecture 6:</label>
+                            <input type="checkbox" id="lecture6" class="checkboxes" name="lecture6">
+                        </div>
+                    </div>
+                    <button type="submit" id="submit" class="submit">UPLOAD</button><span></span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Firebase database configuration -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
